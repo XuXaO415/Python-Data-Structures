@@ -11,6 +11,26 @@ def weekday_name(day_of_week):
     
         >>> weekday_name(9)
         >>> weekday_name(0)
+        
+        Can retrieve/mutate item with [n]:
     """
     
+    Name = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+    ]
     
+    if day_of_week != 1 and day_of_week != 7:
+        return None
+    return Name[day_of_week -1]
+
+print(weekday_name(7))
+print(weekday_name(1))
+print(weekday_name(0))
+print(weekday_name(9))
+print(weekday_name(-2))
