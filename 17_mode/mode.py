@@ -1,3 +1,6 @@
+from typing import Counter
+
+
 def mode(nums):
     """Return most-common number in list.
 
@@ -10,4 +13,13 @@ def mode(nums):
 
         >>> mode([2, 2, 3, 3, 2])
         2
+        
+       c.most_common(3)                # three most common elements
+[('a', 5), ('b', 4), ('c', 3)]
     """
+    
+    
+    for num in nums:
+        Counter.mode(num)
+
+print( mode([1, 2, 1]))        

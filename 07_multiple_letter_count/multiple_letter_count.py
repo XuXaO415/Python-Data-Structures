@@ -1,3 +1,6 @@
+from typing import Counter
+
+
 def multiple_letter_count(phrase):
     """Return dict of {ltr: frequency} from phrase.
 
@@ -7,3 +10,9 @@ def multiple_letter_count(phrase):
         >>> multiple_letter_count('Yay')
         {'Y': 1, 'a': 1, 'y': 1}
     """
+    
+    
+    
+    
+    
+print(multiple_letter_count('yay')) 

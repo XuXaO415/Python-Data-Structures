@@ -3,4 +3,14 @@ def compact(lst):
 
         >>> compact([0, 1, 2, '', [], False, (), None, 'All done'])
         [1, 2, 'All done']
+        
+      
     """
+    
+    #Huh?
+    
+    return [ele for ele in lst if ele]
+    
+
+print(compact([0, 1, 2, '', [], False, (), None, 'All done']))
+   

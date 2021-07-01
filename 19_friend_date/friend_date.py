@@ -16,3 +16,14 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
+# elmo = {'Elmo', 5, ['hugging', 'being nice']}
+# sauron = {'Sauron', 5000, ['killing hobbits', 'chess']}
+
+    if set(a[1]) and set(b[2]):
+        return True
+    else:
+        return False
+    
+        
+# print(friend_date('sauron', 'gandalf'))
+# print(friend_date('elmo', 'sauron')) 
