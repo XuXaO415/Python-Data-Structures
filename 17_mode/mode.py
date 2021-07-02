@@ -1,6 +1,3 @@
-from typing import Counter
-
-
 def mode(nums):
     """Return most-common number in list.
 
@@ -14,12 +11,31 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
         
-       c.most_common(3)                # three most common elements
-[('a', 5), ('b', 4), ('c', 3)]
     """
     
+    # most = set()
+    # for num in nums:
+    #     if nums.count(num) > 1:
+    #         most.add(num)
     
+    # return most
+    # return {n:nums.count(n) for n in nums}
+    
+    
+    # Make frequency counter of num:freq
+    counts = {}
     for num in nums:
-        Counter.mode(num)
-
-print( mode([1, 2, 1]))        
+        counts[num] = counts.get(num, 0) + 1
+    
+    #find the highest value -- the most frequent number
+    max_value = max(counts.values())
+    
+    #now we need to see at which index the highest values is at
+    
+    for(num, freq) in counts.items():
+        if freq == max_value:
+            return num
+    
+    
+print(mode([1, 2, 1])) 
+print(mode([2, 2, 3, 3, 2]))
